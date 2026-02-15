@@ -2,9 +2,7 @@
 
 ---
 
-<a href="https://d2ch06ekyv8s8r.cloudfront.net/index.html" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square" alt="Live Demo" />
-</a>
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=flat-square)](https://d2ch06ekyv8s8r.cloudfront.net/index.html)
 
 ## 📘 Project Overview
 
@@ -88,14 +86,9 @@ Created a React application using Vite and implemented DNA/RNA sequence analysis
 
 ---
 
-## 🤝 ## 🙏 Credits
+## 🤝 Credits
 
-- **ag-charts-react & ag-charts-enterprise** — Used for the Amino Acid Distribution bar chart.
-  <a href="https://www.ag-grid.com/charts/react/bar-series/" target="_blank" rel="noopener noreferrer">
-  AG Charts
-  </a>
+- **ag-charts-react & ag-charts-enterprise** — Used for the Amino Acid Distribution bar chart. [AG Charts](https://www.ag-grid.com/charts/react/bar-series/)
+- **react-donut-chart** — Used for the Nucleotide Distribution donut chart. [React Donut Chart](https://www.npmjs.com/package/react-donut-chart)
 
-- **react-donut-chart** — Used for the Nucleotide Distribution donut chart.
-  <a href="https://www.npmjs.com/package/react-donut-chart" target="_blank" rel="noopener noreferrer">
-  React Donut Chart
-  </a>
+These libraries made it easy to create interactive, customizable charts for the application.
