@@ -18,7 +18,7 @@ The deployment architecture ensures:
 ---
 
 
-## ⚙️ Technologies Used
+## ⚙️ Requirements
 
 #### Frontend
 - React (Vite) — component-based UI architecture
@@ -37,3 +37,9 @@ The deployment architecture ensures:
 - Git & GitHub
 
 ---
+
+##  🏗 Implementation
+
+### 1. Build Frontend Application
+Create a React application using Vite and implement sequence analysis logic.
+
