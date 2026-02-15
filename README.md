@@ -39,6 +39,25 @@ The deployment architecture ensures:
 - Git & GitHub
 
 ---
+## 🏛 System Architecture & Request Flow
+
+The following diagram illustrates the secure delivery pipeline for the static website, utilizing Amazon CloudFront as a CDN and Amazon S3 as the private origin.
+
+<p align="center">
+  <img src="https://docs.aws.amazon.com/images/AmazonCloudFront/latest/DeveloperGuide/images/cloudfront-secure-static-website-overview-github.png" alt="AWS Architecture Diagram" width="600">
+</p>
+
+This project implements a Least-Privilege Security Model by disabling all public access to the S3 bucket and enforcing access through CloudFront's Origin Access Control (OAC).
+
+**Viewer Request (1-2):** A user requests the site via HTTPS. The request is routed to the geographically closest CloudFront Edge Location to minimize latency.
+
+**Origin Fetch & OAC (3-4):** If the requested content is not in the cache (a "cache miss"), CloudFront sends a signed request to the Private S3 Bucket. S3 validates the Origin Access Control (OAC) signature and serves the requested objects.
+
+**Edge Caching (5):** CloudFront caches the objects at the Edge Location. Subsequent requests for the same content are served directly from the cache, significantly reducing the load on the S3 origin.
+
+**Viewer Response (6):** The requested content is delivered back to the user's browser with low latency and high transfer speeds.
+
+---
 
 ##  🏗 Implementation
 
