@@ -2,7 +2,13 @@
 
 ---
 
-## Access the application here: <img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square" alt="Live Demo" style="vertical-align: middle;">
+<h2>Access the application here:</h2>
+<div style="display: flex; align-items: center; gap: 8px;">
+  <span>Live Demo:</span>
+  <a href="https://d2ch06ekyv8s8r.cloudfront.net/index.html">
+    <img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square" alt="Live Demo">
+  </a>
+</div>
 
 ## 📘 Project Overview
 
