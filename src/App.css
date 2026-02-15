@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ─── Layout ────────────────────────────────────────────────── */
+
+header {
+  padding: 10px 15px;
+  display: flex;
+}
+
+.logo {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.page {
+  background-color: #10121f;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.main-layout {
+  width: 100%;
+  max-width: 780px;
+  background-color: #10121f;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+/* ─── Card ───────────────────────────────────────────────────── */
+
+.card {
+  background-color: #161a26;
+  border: 2px solid #434861;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 18px 20px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+.error-card {
+  background-color: rgb(253, 209, 209);
+  border: 2px solid #d30303;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 18px 20px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: #d30303;
+  margin: 8px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.error-card div {
+  margin-left: 5px;
+}
+
+/* ─── Input Card ─────────────────────────────────────────────── */
+
+.sequence-input-label {
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #c8d0e8;
+}
+
+.sequence-input-textarea {
+  border-radius: 5px;
+  min-height: 100px;
+  max-height: 100px;
+  width: 100%;
+  resize: none;
+  background-color: #141623;
+  border: 1px solid #434861;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.sequence-input-textarea::placeholder {
+  font-style: italic;
+  color: #5a607a;
+}
+
+.sequence-actions {
+  margin-top: 12px;
+  align-self: flex-end;
+  display: flex;
+  gap: 6px;
+}
+
+.sequence-actions button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 2px solid #18d5d5;
+  background-color: #161a26;
+  color: #18d5d5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sequence-actions button:hover {
+  background-color: #18d5d5;
+  color: #10121f;
+}
+
+/* ─── Results Grid ───────────────────────────────────────────── */
+
+.results-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: transparent;
+  width: 100%;
+}
+
+.results-left-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.results-right-col {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+/* ─── Sequence Type Card ─────────────────────────────────────── */
+
+.sequence-type-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+  color: #c8d0e8;
+}
+
+/* ─── Complement Card ────────────────────────────────────────── */
+
+.complement-card {
+  width: auto;
+  height: fit-content;
+}
+
+.complement-sequence,
+.codons-list,
+.protein-sequence {
+  word-break: break-all;
+  max-height: 100px;
+  background-color: #141623;
+  padding: 10px;
+  overflow: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #434861;
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #c8d0e8;
+}
+
+/* ─── Bar Chart ──────────────────────────────────────────────── */
+
+.bar-chart {
+  background-color: #141623;
+  border-radius: 5px;
+  border: 1px solid #434861;
+}
+
+/* ─── Codon & Amino Card ─────────────────────────────────────── */
+
+.codon-and-amino-card {
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.codon-and-amino-lengths {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-bottom: 1px solid #434861;
+}
+
+.codon-and-amino-lengths div {
+  padding: 10px 12px;
+  border-bottom: 1px solid #434861;
+  color: #c8d0e8;
+  font-size: 12px;
+}
+
+.codon-and-amino-lengths div:last-child {
+  border-bottom: none;
+}
+
+.codons-list {
+  padding: 10px;
+}
+
+/* ─── Nucleotide Stats Card ──────────────────────────────────── */
+
+.nucleotide-stats-card {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nucleotide-stats-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.sequence-length {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding-block: 10px;
+  color: #c8d0e8;
+  font-size: 12px;
+}
+
+.base-counts {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-block: 1px solid #434861;
+  padding: 10px 12px;
+  color: #c8d0e8;
+  font-size: 12px;
+}
+
+.gc-content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 12px;
+  color: #c8d0e8;
+  font-size: 12px;
+}
+
+/* ─── Protein Card ───────────────────────────────────────────── */
+
+.proteins-data-card {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Donut Chart ────────────────────────────────────────────── */
+
+.donutchart-innertext {
+  fill: white;
+}
+
+/* ─── weighty blue ────────────────────────────────────── */
+
+.weighty-blue {
+  color: #18d5d5;
+  font-weight: 600;
+}
+
+/* ─── Shared Table ───────────────────────────────────────────── */
+
+.table-wrapper {
+  width: 100%;
+  margin-top: 12px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #434861;
+  overflow: hidden;
+}
+
+.table-header-row {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 10px;
+  border-bottom: 1px solid #434861;
+  background-color: #10121f;
+}
+
+.table-header {
+  flex: 1;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8890aa;
+  text-align: left;
+}
+
+.table-contents {
+  max-height: 150px;
+  background-color: #141623;
+  overflow-y: auto;
+}
+
+.unique-codon-list-contents {
+  max-height: 203px;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #1f2333;
+  transition: background 0.12s ease;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row:hover {
+  background: #1a1e2e;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.table-cell-base {
+  color: #c8d0e8;
+  font-family: "Space Mono", monospace;
+}
+
+.table-cell-count {
+  color: #18d5d5;
+  font-family: "Space Mono", monospace;
+}
+
+/* ─── Section headings inside cards ─────────────────────────── */
+
+.card h4 {
+  margin: 0 0 12px 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8890aa;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────── */
+
+@media (max-width: 760px) {
+  .results-row {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .results-left-col {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .results-right-col {
+    width: 100%;
+    flex-shrink: 1;
+  }
+
+  .nucleotide-stats-card,
+  .proteins-data-card {
+    width: 100%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+  }
+
+  .sequence-input-textarea {
+    min-height: 80px;
+    max-height: 80px;
+  }
+
+  .base-counts {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .page {
+    padding: 12px 8px;
+  }
+
+  .card {
+    padding: 12px 10px;
+    margin: 6px 4px;
+  }
+
+  .sequence-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .codon-and-amino-lengths div {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .table-cell {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .table-header {
+    font-size: 10px;
+  }
+
+  .gc-content-row,
+  .sequence-length {
+    font-size: 11px;
+  }
+
+  .base-counts {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .complement-sequence,
+  .codons-list,
+  .protein-sequence {
+    font-size: 11px;
+    max-height: 80px;
+  }
+}
