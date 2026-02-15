@@ -2,6 +2,8 @@
 
 ---
 
+## 🌐 Live Demo can be accessed here: [![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=google-chrome&logoColor=white)](https://d2ch06ekyv8s8r.cloudfront.net/index.html)
+
 ## 📘 Project Overview
 
 This project demonstrates how to deploy a static web application using a secure cloud architecture that prevents direct access to storage while improving performance through caching and edge delivery.
