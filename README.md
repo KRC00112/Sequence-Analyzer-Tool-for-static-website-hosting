@@ -84,6 +84,7 @@ Created a React application using Vite and implemented DNA/RNA sequence analysis
 - Add advanced biological sequence analysis features.
 - Add monitoring and logging.
 
+---
 
 ## 🤝 Credits
 
