@@ -163,7 +163,7 @@ function App() {
         <section className='page'>
             <div className='main-layout'>
                 <header>
-                    <div className='logo'>Sequence Analyzer</div>
+                    <div className='logo'>Nucleotide Sequence Analyzer</div>
                 </header>
 
                 <Card>
@@ -250,7 +250,7 @@ function App() {
                                 </Card>
 
                                 <Card className='proteins-data-card'>
-                                    <h4>PROTEIN DATA:</h4>
+                                    <h4>TRANSLATED PROTEIN DATA:</h4>
 
                                     <div className='table-wrapper'>
                                         <div className="table-header-row">
